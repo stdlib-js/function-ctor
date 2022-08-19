@@ -43,7 +43,7 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-esm/index.mjs';
 ```
 
 #### Function( \[...argNames,] body )
@@ -96,7 +96,7 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 <body>
 <script type="module">
 
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-esm/index.mjs';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
