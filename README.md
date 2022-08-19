@@ -43,7 +43,7 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-deno/mod.js';
 ```
 
 #### Function( \[...argNames,] body )
@@ -91,7 +91,7 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-deno/mod.js';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
