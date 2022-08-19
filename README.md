@@ -43,6 +43,11 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-ctor/tags). For example,
+
+```javascript
 import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 <body>
 <script type="module">
 
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
