@@ -56,8 +56,6 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 ## Usage
 
-<!-- eslint-disable stdlib/no-redeclare -->
-
 ```javascript
 var Function = require( '@stdlib/function-ctor' );
 ```
@@ -65,8 +63,6 @@ var Function = require( '@stdlib/function-ctor' );
 #### Function( \[...argNames,] body )
 
 Returns a new [function][mdn-function] object.
-
-<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var greet = new Function( 'name', 'return "Hello, "+name+"!"' );
@@ -103,8 +99,6 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 ## Examples
 
 <!-- eslint no-undef: "error" -->
-
-<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var Function = require( '@stdlib/function-ctor' );
@@ -174,8 +168,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/function-ctor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/function-ctor
 
-[test-image]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/function-ctor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/function-ctor?branch=main
