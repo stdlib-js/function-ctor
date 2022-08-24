@@ -34,28 +34,35 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/function-ctor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-<!-- eslint-disable stdlib/no-redeclare -->
-
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-ctor/tags). For example,
-
-```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.1-esm/index.mjs';
+var Function = require( '@stdlib/function-ctor' );
 ```
 
 #### Function( \[...argNames,] body )
 
 Returns a new [function][mdn-function] object.
-
-<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var greet = new Function( 'name', 'return "Hello, "+name+"!"' );
@@ -93,24 +100,13 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 
 <!-- eslint no-undef: "error" -->
 
-<!-- eslint-disable stdlib/no-redeclare -->
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+```javascript
+var Function = require( '@stdlib/function-ctor' );
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
 var v = add( 1, 2 );
 // returns 3
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -142,7 +138,7 @@ var v = add( 1, 2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -172,8 +168,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/function-ctor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/function-ctor
 
-[test-image]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/function-ctor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/function-ctor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/function-ctor?branch=main
