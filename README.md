@@ -41,6 +41,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-ctor/tags). For example,
+
+```javascript
 import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.2-deno/mod.js';
 ```
 
@@ -197,7 +202,7 @@ var v = add.toString();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.0.2-deno/mod.js';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
