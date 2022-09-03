@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/function-ctor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-Function = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var Function = require( 'path/to/vendor/umd/function-ctor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.Function;
-})();
-</script>
+var Function = require( '@stdlib/function-ctor' );
 ```
 
 #### Function( \[...argNames,] body )
@@ -107,12 +99,12 @@ var v = greet.length;
 function greet( name ) {
     return 'Hello, '+name+'!';
 }
-v = greet.name;
+var v = greet.name;
 // returns 'greet'
 
 // Functions created with the Function constructor are anonymous:
 var fcn = new Function( 'name', 'return "Hello, "+name+"!"' );
-var v = fcn.name;
+v = fcn.name;
 // returns 'anonymous'
 ```
 
@@ -138,7 +130,7 @@ var proto = greet.prototype;
 
 #### Function.prototype.apply( thisArg, args )
 
-Calls the specified function witht he given `this` argument and arguments provided as an array-like object.
+Calls the specified function with the given `this` argument and arguments provided as an array-like object.
 
 ```javascript
 function add( x, y ) {
@@ -155,7 +147,7 @@ var v = add.apply( null, [ 1, 2 ] );
 Returns a new function which invokes the original function with the given `this` value and arguments.
 
 ```javascript
-functiona add( x, y ) {
+function add( x, y ) {
     return x + y;
 }
 var add1 = add.bind( null, 1 );
@@ -190,7 +182,7 @@ function add( x, y ) {
     return x + y;
 }
 var v = add.toString();
-// returns 'function add( x, y ) {\n    return x + y;\n}'
+// e.g., returns 'function add( x, y ) {\n    return x + y;\n}'
 ```
 
 </section>
@@ -220,23 +212,13 @@ var v = add.toString();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Function = require( '@stdlib/function-ctor' );
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
 var v = add( 1, 2 );
 // returns 3
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
