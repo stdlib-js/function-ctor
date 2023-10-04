@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.1.1-deno/mod.js';
 ```
 
 #### Function( \[...argNames,] body )
@@ -208,7 +208,7 @@ var v = add.toString();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@deno/mod.js';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.1.1-deno/mod.js';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
