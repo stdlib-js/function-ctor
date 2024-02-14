@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-ctor/tags). For example,
+
+```javascript
 import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.2.0-esm/index.mjs';
 ```
 
@@ -226,7 +231,7 @@ var v = add.toString();
 <body>
 <script type="module">
 
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.2.0-esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
