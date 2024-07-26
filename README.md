@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.2.2-esm/index.mjs';
 ```
 
 #### Function( \[...argNames,] body )
@@ -226,7 +226,7 @@ var v = add.toString();
 <body>
 <script type="module">
 
-import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@esm/index.mjs';
+import Function from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-ctor@v0.2.2-esm/index.mjs';
 
 var add = new Function( 'x', 'y', 'return x + y' );
 
